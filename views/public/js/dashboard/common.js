@@ -28,5 +28,16 @@ if (location.pathname != '/login') {
        location.href='login';
     });
 
+	// $("#course_manage").on('click',function(){
+	// 	$(this).next().slideToggle();
+	// });
+	// $("#system_sz").on('click',function(){
+	// 	$(this).next().slideToggle();
+	// });
+	//实现侧边栏下滑的效果
+	$('.navs a+ul').prev().on('click',function(){
+		$(this).next().slideToggle();
+	});
+
 });
 
