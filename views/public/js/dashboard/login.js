@@ -1,4 +1,7 @@
-// 登录功能
+
+define([ 'jquery','cookie'], 
+function($, cookie) {
+ // 登录功能
  $("#loginBtn").submit(function () {
             // console.log("123");
             var data = $(this).serializeArray();
@@ -22,7 +25,6 @@
             });
             return false;
         });
-         //退出功能
-    // $('#logoutBtn').on('click',function(){
-    //     // alert('123');
-    // });
+    
+});
+
